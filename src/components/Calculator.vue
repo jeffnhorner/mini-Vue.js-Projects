@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <h2>{{title}}</h2>
+    <h2>{{ title }}</h2>
     <div class="calc-container">
       <span class="total">{{ current || '0'}}</span>
       <span @click="clear" class="col top-row">AC</span>
