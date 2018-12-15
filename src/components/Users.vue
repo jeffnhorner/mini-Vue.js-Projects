@@ -32,7 +32,8 @@
         newUser: [],
         count: 0,
         subdomain: '',
-        interval: null
+        interval: null,
+        timer: null
       }
     },
     methods: {
@@ -50,25 +51,7 @@
         this.users.splice(this.users.indexOf(user), 1);
       }
     },
-    // beforeRouteEnter(to, from, next) {
-    //   const loggedIn = true;
-
-    //   if(loggedIn) {
-    //     next()
-    //   } else {
-    //     next('/')
-    //   }
-    // },
-    // beforeRouteLeave(to, from, next) {
-    //   const answer = window.confirm("Are you sure, your changes won't be save");
-
-    //   if(answer) {
-    //     next();
-    //   } else {
-    //     next(false);
-    //   }
-    // },
-    created: function() {
+    created() {
       this.$http.get('https://jsonplaceholder.typicode.com/users') 
         .then(function(response, reject) {
           this.users = response.data;
@@ -77,6 +60,15 @@
           console.log('data not received')
         })
     },
+    mounted() {
+      this.timer = setInterval(() => {
+        this.count += 1;
+        console.log(this.count);
+      }, 1000);
+    },
+    destroyed() {
+      clearInterval(this.timer);
+    }
   }
 </script>
 
@@ -89,14 +81,5 @@
   }
   .fadeIn {
     animation: fadeIn .5s ease-in-out;
-  }
-  @-webkit-keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
   }
 </style>
