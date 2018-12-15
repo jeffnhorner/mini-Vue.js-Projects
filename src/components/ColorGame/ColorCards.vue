@@ -31,16 +31,22 @@ export default {
 </script>
 
 <style scoped>
+  .color-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
   .color-card {
-    height: 200px;
-    width: 200px;
+    height: 230px;
+    width: 230px;
     margin: 5px;
     float: right;
     background-color: maroon;
-    transition: all .2s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   .color-card:hover{
     cursor: pointer;
-    transform: scale(1.025);
+    transform: scale(1.02);
+    box-shadow: 1px 1px 8px #d8d8d8;
   }
 </style>
