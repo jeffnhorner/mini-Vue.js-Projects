@@ -71,6 +71,7 @@ export default {
       this.numColorCards = 6;
       this.setupColorCards();
     },
+    // resetting the game to a new set of 6 random color cards, selecting a new random color to be the selectedColor, as well as some of the intial instructions.
     reset() {
       this.numColorCards = 6;
       this.resetGame = false;
@@ -103,6 +104,7 @@ export default {
 
       return this.randColor;
     },
+    // this event was emitted from the ColorCards child component and is trigger when the user clicks on one of the color cards.
     guess(bgColor) {
       this.randArrItem = bgColor.style.backgroundColor;
       let selectedColorLC = this.selectedColor.toLowerCase();
