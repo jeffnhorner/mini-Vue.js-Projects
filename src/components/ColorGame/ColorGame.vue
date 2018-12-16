@@ -1,6 +1,5 @@
 <template>
   <div class="content">
-    <!-- <h3>The Great RGB Color Game</h3> -->
 
     <div v-if="currentGame" class="game-mode">
       <p>Select the game mode: </p>
@@ -10,7 +9,7 @@
 
     <div class="game-info">
       <p><strong>{{ gameMsg }}</strong></p>
-      <button v-if="resetGame" @click="reset">Reset</button>
+      <button v-if="resetGame" @click="reset">Play Again?</button>
       <h3>{{ selectedColorUppercase }}</h3>
     </div>
 
