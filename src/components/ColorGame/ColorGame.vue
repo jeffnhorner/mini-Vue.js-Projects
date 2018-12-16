@@ -119,6 +119,8 @@ export default {
         this.currentGame = false;
 
       } else {
+        bgColor.style.backgroundColor = 'transparent';
+        bgColor.style.boxShadow = 'none';
         this.gameMsg = 'Try again!'
       }
     }
@@ -143,16 +145,13 @@ export default {
     animation: fadeIn 1.2s;
   }
   .game-mode {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .game-mode p {
-    margin: 10px;
+    margin-bottom: -2px;
     color: #262626;
     font-weight: 100;
     font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   button {
     padding: 5px 20px;
