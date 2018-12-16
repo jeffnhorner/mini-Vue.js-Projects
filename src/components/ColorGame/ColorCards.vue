@@ -1,30 +1,26 @@
 <template>
   <div class="color-container">
-    <div @click="guess" class="color-card"></div>
-    <div @click="guess" class="color-card"></div>
-    <div @click="guess" class="color-card"></div>
-    <div @click="guess" class="color-card"></div>
-    <div @click="guess" class="color-card"></div>
-    <div @click="guess" class="color-card"></div>
+    <div @click="guess(colorCards[0])" class="color-card"></div>
+    <div @click="guess(colorCards[1])" class="color-card"></div>
+    <div @click="guess(colorCards[2])" class="color-card"></div>
+    <div @click="guess(colorCards[3])" class="color-card"></div>
+    <div @click="guess(colorCards[4])" class="color-card"></div>
+    <div @click="guess(colorCards[5])" class="color-card"></div>
+    
   </div>
 </template>
 
 <script>
 export default {
   name: 'ColorCard',
-  // passing colorCard props from the parent component to this child component
+  // passing colorCard & colorArr props from the parent component to this child component
   props: [
     'colorCards',
-    'colors'
+    'colorArr'
   ],
-  data() {
-    return {
-      
-    }
-  },
   methods: {
-    guess() {
-      
+    guess(bgColor) {
+      this.$emit('user-guess', bgColor);     
     }
   },
 }
@@ -41,12 +37,12 @@ export default {
     width: 230px;
     margin: 5px;
     float: right;
-    background-color: maroon;
+    box-shadow: 1px 1px 8px #d8d8d8;
     transition: all .3s ease-in-out;
   }
   .color-card:hover{
     cursor: pointer;
     transform: scale(1.02);
-    box-shadow: 1px 1px 8px #d8d8d8;
+    box-shadow: 1px 1px 12px #d8d8d8;
   }
 </style>
