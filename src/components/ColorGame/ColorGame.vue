@@ -26,14 +26,14 @@ export default {
   data() {
     return {
       numColorCards: 6,
+      colorCards: null,
       randColor: null,
       colors: null,
-      colorCards: null,
       colorArr: null,
+      resetGame: false,
+      currentGame: true,
       selectedColor: '',
       gameMsg: "What color card matches the below RGB code?",
-      resetGame: false,
-      currentGame: true
     }
   },
   components: {
