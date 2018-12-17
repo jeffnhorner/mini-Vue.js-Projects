@@ -24,7 +24,6 @@
         let rand = Math.floor(Math.random() * 40) + 1  
         this.$http.get('http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=40')
           .then(function(response) {
-            console.log(response)
             this.quotes.author = response.body[rand].title;
             this.quotes.content = response.body[rand].content;
           })
