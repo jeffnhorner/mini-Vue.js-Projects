@@ -103,7 +103,7 @@
   }
 </script>
 
-<style scoped>
+<style>
   .content {
     animation: fadeIn 1.2s;
   }
