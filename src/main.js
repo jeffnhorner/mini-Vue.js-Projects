@@ -21,7 +21,6 @@ const router = new vueRouter({
   routes: [
     {path: '/', component: Home},
     {path: '/weather', component: Weather},
-    {path: '/users', component: Users},
     {path: '/todo', component: ToDo},
     {path: '/quotes', component: Quotes},
     {path: '/calculator', component: Calculator},
@@ -39,8 +38,7 @@ new Vue({
       <ul>
         <li @click="navItem"><router-link to="/">Home</router-link></li>
         <li @click="navItem"><router-link to="/weather">Weather</router-link></li>
-        <li @click="navItem"><router-link to="/users">Users</router-link></li>
-        <li @click="navItem"><router-link to="/todo">ToDo List</router-link></li>
+        <li @click="navItem"><router-link to="/todo">Todo List</router-link></li>
         <li @click="navItem"><router-link to="/quotes">Quote Generator</router-link></li>
         <li @click="navItem"><router-link to="/calculator">Calculator</router-link></li>
         <li @click="navItem"><router-link to="/color-game">Color Game</router-link></li>
