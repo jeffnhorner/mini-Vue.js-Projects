@@ -48,9 +48,9 @@ new Vue({
   `,
   methods: {
     navItem() {
-      if (window.location.href == 'http://localhost:8080/calculator') {
+      if (window.location.pathname == '/calculator') {
         document.body.classList.add('calc');
-      } else if (window.location.href !== 'http://localhost:8080/calculator') {
+      } else if (window.location.pathname !== '/calculator') {
         document.body.classList.remove('calc');
       }
     }
