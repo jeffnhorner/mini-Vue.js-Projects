@@ -13,6 +13,9 @@ footer a {
   font-weight: bold;
   text-decoration: none;
 }
+body.calc footer, body.calc footer a {
+  color: #e7e7e7;
+}
 #nav > ul li {
   display: inline;
   margin: 0 20px;
