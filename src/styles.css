@@ -1,39 +1,51 @@
 body {
   text-align: center;
 }
+footer {
+  bottom: 0;
+  font-size: 12px;
+  margin: 0 auot;
+  position: absolute;
+  width: 100%;
+}
+footer a {
+  color: #262626;
+  font-weight: bold;
+  text-decoration: none;
+}
 #nav > ul li {
-  margin: 0 20px;
   display: inline;
+  margin: 0 20px;
 }
 #nav>ul li a {
   color: #262626;
-  text-decoration: none;
   font-weight: 100;
+  text-decoration: none;
 }
 #nav>ul li a:hover {
-  font-weight: 400;
   color: #000;
+  font-weight: 400;
 }
 #nav > ul {
-  width: 100%;
   margin: 0 auto 100px;
+  padding-top: 40px;
+  width: 100%;
 }
 #nav > div {
-  width: 100%;
-  max-width: 740px;
   margin: 0 auto;
+  max-width: 740px;
+  width: 100%;
 }
 #nav ul{
   list-style-type: none;
   padding-left: 0;
 }
 #nav {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 40px;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  text-align: center;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 @-webkit-keyframes fadeIn {
   from {
