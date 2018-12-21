@@ -44,6 +44,9 @@ new Vue({
         <li @click="navItem"><router-link to="/color-game">Color Game</router-link></li>
       </ul>
       <router-view></router-view>
+      <footer>
+        <p>&copy; 2018 | <a href="https://www.jeffnhorner.com" target="_blank">Coded by Jeff Horner</a></p>
+      </footer>
     </div>
   `,
   methods: {
