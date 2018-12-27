@@ -9,6 +9,7 @@ import ToDo from './components/ToDo'
 import Quotes from './components/Quotes'
 import Calculator from './components/Calculator'
 import ColorGame from './components/ColorGame/ColorGame'
+import Footer from './components/Footer';
 
 import './styles.css'
 
@@ -33,6 +34,9 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   router,
+  components: {
+    'Footer': Footer
+  },
   template: `
     <div id="nav">
       <ul>
@@ -44,9 +48,7 @@ new Vue({
         <li @click="navItem"><router-link to="/color-game">Color Game</router-link></li>
       </ul>
       <router-view></router-view>
-      <footer>
-        <p>&copy; 2018 | <a href="https://www.jeffnhorner.com" target="_blank">Coded by Jeff Horner</a></p>
-      </footer>
+      <Footer></Footer>
     </div>
   `,
   methods: {
