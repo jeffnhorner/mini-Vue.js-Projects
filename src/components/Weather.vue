@@ -1,6 +1,6 @@
 <template>
   <div class="weather content">
-    <h3>Local Weather Data</h3>
+    <h2>Local Weather Data</h2>
     <p>Please enter your city and country below to see your current local weather:</p>
 
     <form @submit.prevent="getWeather">
