@@ -146,7 +146,7 @@ export default {
     animation: fadeIn 1.2s;
   }
   .game-mode {
-    margin-bottom: -2px;
+    margin-bottom: -12px;
     color: #262626;
     font-weight: 100;
     font-size: 14px;
