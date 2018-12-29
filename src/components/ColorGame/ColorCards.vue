@@ -33,8 +33,8 @@ export default {
     text-align: center;
   }
   .color-card {
-    height: 230px;
-    width: 230px;
+    height: 215px;
+    width: 215px;
     margin: 5px;
     float: right;
     box-shadow: 1px 1px 8px #d8d8d8;

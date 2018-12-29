@@ -145,8 +145,11 @@ export default {
   .content {
     animation: fadeIn 1.2s;
   }
+  button {
+      margin: 10px 10px 20px;
+  }
   .game-mode {
-    margin-bottom: -12px;
+    margin-bottom: -3px;
     color: #262626;
     font-weight: 100;
     font-size: 14px;
