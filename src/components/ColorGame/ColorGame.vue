@@ -149,7 +149,7 @@ export default {
       margin: 10px 10px 20px;
   }
   .game-mode {
-    margin-bottom: -3px;
+    margin-bottom: -13px;
     color: #262626;
     font-weight: 100;
     font-size: 14px;
