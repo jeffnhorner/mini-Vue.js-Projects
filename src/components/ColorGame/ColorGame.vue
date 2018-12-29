@@ -154,15 +154,6 @@ export default {
     flex-direction: row;
     justify-content: center;
   }
-  button {
-    padding: 5px 20px;
-    margin: 10px;
-    background-color: #fff;
-    background: #fff;
-    border-color: #e7e7e7;
-    cursor: pointer;
-    outline: none;
-  }
   .game-info h3 {
     font-weight: 400;
   }

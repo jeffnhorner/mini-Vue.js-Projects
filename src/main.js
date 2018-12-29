@@ -11,7 +11,7 @@ import Calculator from './components/Calculator'
 import ColorGame from './components/ColorGame/ColorGame'
 import Footer from './components/Footer';
 
-import './styles.css'
+import './styles/styles.css'
 
 Vue.use(vueResource)
 Vue.use(vueRouter)

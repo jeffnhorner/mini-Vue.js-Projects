@@ -3,7 +3,7 @@
     <h2>{{ title }}:</h2>
     <form @submit.prevent="addItem">
       <input type="text" v-model="newList" placeholder="Enter your list items...">
-      <input type="submit" value="Add Item">
+      <button type="submit">Add Item</button>
     </form>
     <ul>
       <li class="fadeIn" v-for="item in list" :key="item.index">{{ item }}<button @click="deleteItem(item)">X</button></li>
