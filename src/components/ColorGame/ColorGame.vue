@@ -13,7 +13,11 @@
       <h3>{{ selectedColorUppercase }}</h3>
     </div>
 
-    <ColorCards @user-guess="guess" :colorCards="colorCards" :colorArr="colorArr"></ColorCards>
+    <ColorCards 
+      @user-guess="guess" 
+      :colorCards="colorCards" 
+      :colorArr="colorArr">
+    </ColorCards>
 
   </div>
 </template>
